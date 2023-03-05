@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+        .block{
+            display: block;
+            background-color: red;
+        }
+        .inline{
+            display: inline;
+            background-color: blue;
+            margin: 0px 15px;
+        }
+        .inline-block{
+            display: inline-block;
+            background-color: purple;
+            margin-top: 20px;
+        }
+        .none{
+            display: none;
+        }
+        img{
+            position: absolute;
+            top: 200px;
+            left: 10px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Display block</h2>
+    <div>
+        display: block; - displays the element as <span class="block">BLOCK ELEMENT.</span>
+        Block level elements do not sit inline instead they will create a new line break.
+        By default (without setting a width) they take up as much horizontal space as they can.
+    </div>
+    <h2>Display Inline</h2>
+    <div>
+        display: inline; - displays the <p class="inline">INLINE ELEMENT.</p>
+        An inline element will accept margin and padding, but the element still sits inline 
+        as you might expect.
+        Margin and padding will only push other elements horizontally away, not vertically. an inline
+        element will not accept height and width. it will just ignore it.
+    </div>
+
+    <h2>Display inline-block</h2>
+    <div>
+        display: inline-block; - the element will have the characteristic of 
+        a block element but sits on a line.
+
+        <p class="inline-block">INLINE-BLOCK ELEMENT.</p>
+        You are now able to set the width and height, which will be respected.
+    </div>
+
+    <h2>display none</h2>
+    <div>
+        display:none- this will <span class="none">HIDE</span>
+        the element
+    </div>
+
+    <img src="assets/image/logo.png" alt="">
+</body>
+</html>

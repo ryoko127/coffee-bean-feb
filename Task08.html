@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        .animal-image1{
+            background-image: url("assets/image/wallaby.avif");
+            height: 300px;
+            width: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 5px solid;
+            border-color: red;
+        }
+        .animal-image2{
+            background-image: url("assets/image/wallaby.avif");
+            height: 300px;
+            width: 300px;
+            background-position: center;
+            background-repeat: repeat;
+            background-size: 150px, 150px;
+            border: 5px solid;
+            border-color: red;
+            position: relative;
+        }
+        .animal-image3{
+            background-image: url("assets/image/wallaby.avif");
+            height: 300px;
+            width: 300px;
+            background-position: center;
+            background-repeat: repeat;
+            background-size: 30%;
+            border: 5px solid;
+            border-color: red;
+            position: relative;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>background-size: auto;</h2>
+    <div class="animal-image1"></div><br><br>
+
+    <h2>background-size: 150px, 150px;</h2>
+    <div class="animal-image2"></div><br><br>
+
+    <h2>background-size: 30%;</h2>
+    <div class="animal-image3"></div><br>
+    
+</body>
+</html>

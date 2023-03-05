@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Firstname" required><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="user-password" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="comments">Feedback:</label><br>
+        <textarea name="comments" id="comments" cols="60" rows="10"></textarea><br>
+
+        <p>Please select your favorite place:</p>
+        <input type="radio" name="place" id="tokyo-tower" value="tokyo-tower">
+        <label for="tokyo-tower">Tokyo Tower</label>
+
+        <input type="radio" name="place" id="shibuya station" value="shibuya station">
+        <label for="shibuya station">Shibuya Station</label>
+
+        <input type="radio" name="place" id="mount-fuji" value="mount-fuji">
+        <label for="mount-fuji">Mount-Fuji</label><br>
+
+        <p>Please select your favorite dishes:</p>
+        <input type="checkbox" name="food" id="sushi" value="sushi">
+        <label for="sushi">Sushi</label>
+
+        <input type="checkbox" name="food" id="udon" value="udon">
+        <label for="udon">Udon</label>
+
+        <input type="checkbox" name="food" id="oden" value="oden">
+        <label for="oden">Oden</label><br>
+        
+        <p>What is your device?</p>
+        <select name="device" id="device">
+            <option value="mac">Macbook</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+        </select><br><br>
+
+        <label for="upload">Upload</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" min="1" max="5">
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <label for="datemax">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+
+        <br>
+        <br>
+        <input type="submit" value="submit"><br><br>
+    </form>
+</body>
+</html>

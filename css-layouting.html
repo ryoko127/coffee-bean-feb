@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting</title>
+
+    <style>
+    .text-align-left{
+        text-align: left;
+        background-color: red;
+        clear: left;
+    }
+    .text-align-right{
+        text-align: right;
+        background-color: blue;
+    }
+    .float-left{
+        float: left;
+        background-color: red;
+    }
+    .float-right{
+        float: right;
+        background-color: blue;
+    }
+
+    .static{
+        position: static;
+        border: 1px solid black;
+        left: 5%;
+    }
+    .relative{
+        position: relative;
+        border: 1px solid purple;
+        left: 15%;
+    }
+
+    .absolute{
+        position: absolute;
+        border: 1px solid green;
+        top: 10%;
+        left: 5%;
+        right: 60%;
+    }
+
+    .fixed{
+        position: fixed;
+        border: 1px solid red;
+        bottom: 0;
+        right: 0;
+    }
+    </style>
+</head>
+<body>
+
+    <p class="text-align-left">
+        this is text align
+    </p>
+    <p class="text-align-right">
+        this is text align right
+    </p>
+    <p class="float-right">
+        this is float right
+    </p>
+    <p class="text-align-left">
+        this is text align left 2
+    </p>
+    <p class="float-left">
+        this is float left
+    </p>
+    <p class="float-left">
+        this is float left 2
+    </p>
+
+    <hr />
+
+    <h2>Position</h2>
+    <div class="static">
+        position: static; - this is the default positioning;
+        <br />
+        the element will stick to the normal page flow. <br />
+        So if there is a left/right/top/bottom/z-index set then there will be no
+        effect on that element.
+    </div>
+    <div class="relative">
+        position: relative; - is an element original position
+        <br>
+        the element will stick to the normal page flow. just like the static value.But now 
+        left/right/top/bottom/z-index will work. The positional properties can move the element from the original 
+        position in that direction.
+    </div>
+
+    <div class="absolute">
+        position:absolute; - the element will be removed
+        from the flow of the page abd other element will behave
+        as if its not even there. all other positional properties will work on it
+    </div>
+
+    <div class="fixed">
+        the element is removed from the flow of the page.
+        relative to the document, not any particular
+        parent. not affected by scrolling.
+    </div>
+
+  </body>
+</html>

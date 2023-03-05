@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+    <style>
+        .header1{
+            border: 3px solid purple;
+            text-align: center;
+        }
+        .nav1{
+            border: 3px solid purple;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .section-parent{
+            border: 3px solid purple;
+            text-align: left;
+            margin-top: 5px;
+            float: left;
+            width: 70%;
+        }
+        .section-child{
+            border: 3px solid purple;
+            text-align: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .article1{
+            border: 3px solid purple;
+            text-align: left;
+            margin: 5px;
+        }
+        .aside1{
+            border: 3px solid purple;
+            text-align: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            float: right;
+            width: 27.5%;
+        }
+        .header{
+            height: 40px;
+            padding: 20px 20px 0;
+            background: #e1e1e1;
+        }
+        .main-content{
+            height: 60vh;
+            padding: 20px;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #e1e1e1;
+            color: black;
+            height: ;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header1">
+        <h1>This is a header</h1>
+        <p>It is always visible for the user at the top
+            part of the page.</p>
+    </header>
+
+    <nav class="nav1">
+        <a href="#">HTML</a> | <a href="#">CSS</a> | <a href="#">JavaScript</a>
+        | <a href="#">jQuery</a>
+        <p>The nav defines the space for the navigation links</p>
+    </nav>
+    <section class="section-parent">
+    
+    <section class="section-child">
+        <p>This is a section child</p>
+        <p>section defines a separate section within a 
+            webpage. Considered as the "parent of Article"
+        </p>
+    </section>
+    <article class="article1">
+        <p>This is a Article</p>
+        <p>The Article defines the article content.The 
+            sub-section
+        </p>
+    </article>
+</section>
+
+<aside class="aside1">
+        <p>this is a side bar, for example a 
+            terminology definition or a short history
+            background to a historical figure</p>
+        <p>the aside defines content which will be set
+            on the side of the page. it is usually used 
+            for side bars and side contents</p>
+        <p>this side content sometimes used a slide 
+            show of images</p>
+</aside>
+
+<div class="header">Header/Menu</div>
+<div class="main-content"></div>
+    <h1>Main Content</h1>
+    <p>This is some paragraph.</p>
+
+
+
+<footer>
+    <p>Author: Paolo L. Pacaldo</p>
+    <a href="test@gmail.com">Contact me at this link</a>
+</footer>
+
+</body>
+</html>
+
